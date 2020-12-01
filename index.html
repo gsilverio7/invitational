@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="rpg, tabletoprpg, dnd">
+        <meta name="description" content="Website da mesa de RPG X.">
+        <meta name="author" content="Gabriel Silvério">
+        <meta name="robots" content="index, follow">
+
+        <title>Um Convite</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                background-image: url("rpg_city.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .wrapper{
+                width: 600px;
+                min-height: calc(100vh - 50px);
+                margin: 0 auto;
+                padding: 25px;
+                background-color: rgb(240, 240, 240, 0.8);
+                text-align: center;
+            }
+
+            .text{
+                font-size: 30px;
+            }
+
+            .stext{
+                font-size: 25px;
+            }
+
+            .aspas{
+                font-size: 70px; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            #ticket{
+                width: 125px;
+                
+            }
+
+            .zoom{
+                cursor: zoom-in;
+            }
+
+            .grab{
+                cursor: grab;
+            }
+
+            .zoom:hover{
+                transform: scale(4, 4);
+                transition: 1s;
+            }
+        </style>
+        <script>
+            function show(){
+                document.getElementById("ticket").classList.remove('grab');
+                document.getElementById("ticket").classList.add('zoom');
+                document.getElementById("text01").innerHTML="Olá caro aventureiro,";
+                document.getElementById("text01").classList.add('stext');
+                document.getElementById("text02").innerHTML="Aceite este convite e venha para essa aventura. Vamos fazer as coisas direito e contar uma bela história. Aqui o objetivo não é seguir as regras e sim se divertir, e de quebra participar de uma bela história, por isso, pensamos em começar uma aventura para o meio do mês de dezembro. Para a primeira missão caso deseje participar, caro aventureiro, é criar uma história para o seu personagem, mas não esqueça, crie uma história bem elaborada pra gente poder contar uma boa história juntos. A primeira aventura não possui certeza na data, apenas o desejo de que se inicie em meados de dezembro, pedimos apenas para confirmar ou não sua presença. Até mais caro aventureiro!!";
+                document.getElementById("text02").classList.add('stext');
+                document.getElementById("text03").innerHTML="";
+                document.getElementById("text04").innerHTML="";
+                document.getElementById("text05").innerHTML="";
+            }
+        </script>
+    </head>
+    <body>
+
+        <main class="wrapper">
+            <section >
+              <p id="text01" class="text"><span class="aspas">"</span>Caminhando pelas ruas, você escuta uma voz esganiçada lhe chamando.</p>
+              <p id="text02" class="text"> -Ei, você.</p>
+              <p id="text03" class="text"> Sem entender, procura a direção de onde vem a fala, sem entender o que estava acontecendo e principalmente o que estaria para acontecer.</p>
+              <p id="text04" class="text"> -Sim você. Está afim de uma aventura, rapazinho?</p>
+              <p id="text05" class="text">Pergunta o velho senhor entregando um pequenino papel para você.</p>
+            </section>
+            <section class="section" style="position: absolute; bottom: 100px; left: calc(50vw - 62.5px);">
+              <img src="golden_ticket.jpeg" alt="" id="ticket" class="grab" onclick="show()">
+            </section>
+            <section style="display: none;">
+              <p >Olá caro aventureiro, 
+                Aceite este convite e venha para essa aventura. Vamos fazer as coisas direito e contar uma bela história. Aqui o objetivo não é seguir as regras e sim se divertir, e de quebra participar de uma bela história, por isso, pensamos em começar uma aventura para o meio do mês de dezembro.
+                Para a primeira missão caso deseje participar, caro aventureiro, é criar uma história para o seu personagem, mas não esqueça, crie uma história bem elaborada pra gente poder contar uma boa história juntos.
+                A primeira aventura não possui certeza na data, apenas o desejo de que se inicie em meados de dezembro, pedimos apenas para confirmar ou não sua presença.
+                Até mais caro aventureiro!!</p>
+            </section>
+        </main>
+        
+    </body>
+</html>
